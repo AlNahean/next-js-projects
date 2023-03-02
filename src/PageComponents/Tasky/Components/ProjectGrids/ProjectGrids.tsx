@@ -44,11 +44,11 @@ const ProjectGrids = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className=" grid md:grid-cols-3 xl:grid-cols-3 px-6 ">
+      <div className=" grid md:grid-cols-2 xl:grid-cols-3 px-6 ">
         {/* <div className=" md:columns-2 xl:columns-3 px-6 "> */}
         {taskyListUlData.map((item, index) => {
           return (
-            <div className="  md:border-r md:border-l border-zinc-600 pt-6 px-3 ">
+            <div className="  md:border-r md:border-l border-zinc-600 border-opacity-0 pt-6 px-3 ">
               <div className=" flex justify-between items-center my-4">
                 <div className=" bg-slate-800 px-6 py-2 rounded-3xl text-2xl">
                   <span>{item.title}</span>

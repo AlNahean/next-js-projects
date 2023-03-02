@@ -3,6 +3,8 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 
 import gsap from "gsap";
 
+import { FiArrowRight } from "react-icons/fi";
+
 const mainUlData = [
   {
     id: 1,
@@ -33,7 +35,7 @@ const mainUlData = [
     price: "749",
   },
 ];
-const animDuration = 1;
+const animDuration = 0.6;
 type Props = {};
 
 const MainContent = (props: Props) => {
@@ -270,6 +272,25 @@ const MainContent = (props: Props) => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Buttons */}
+
+      <div
+        className=" next-btn fixed z-50 top-[50%] right-4 text-8xl cursor-pointer"
+        onClick={() => {
+          ctx.removeRight();
+        }}
+      >
+        <FiArrowRight />
+      </div>
+      <div
+        className=" next-btn fixed z-50 top-[50%] left-4 rotate-180 text-8xl cursor-pointer"
+        onClick={() => {
+          ctx.removeLeft();
+        }}
+      >
+        <FiArrowRight />
       </div>
     </div>
   );
