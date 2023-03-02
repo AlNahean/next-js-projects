@@ -2,9 +2,9 @@ import React from "react";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import MainContext from "./Components/MainContent/MainContext";
 
-type Props = {};
+type pageProps = {};
 
-const Tasky = (props: Props) => {
+const Tasky = (props: pageProps) => {
   return (
     <>
       <div className=" tasky-page-wrapper max-w-[100vw] overflow-x-hidden text-white">

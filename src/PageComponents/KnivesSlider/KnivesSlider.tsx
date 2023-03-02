@@ -2,9 +2,9 @@ import React from "react";
 import { useKnivesSliderContext } from "./KnivesSliderContext";
 import MainContent from "./Components/MainContent/MainContent";
 import { FiMenu } from "react-icons/fi";
-type Props = {};
+type pageProps = {};
 
-const KnivesSlider = (props: Props) => {
+const KnivesSlider = (props: pageProps) => {
   const { test, previousSlide, nextSlide, renderdCards } =
     useKnivesSliderContext();
   return (

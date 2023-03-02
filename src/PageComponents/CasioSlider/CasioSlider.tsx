@@ -7,9 +7,9 @@ import { GrFormNext } from "react-icons/gr";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { useCasioSliderContext } from "./CasioSliderContext";
 
-type Props = {};
+type pageProps = {};
 
-const CasioSlider = (props: Props) => {
+const CasioSlider = (props: pageProps) => {
   const { nextSlide, previousSlide } = useCasioSliderContext();
   return (
     <div className=" max-h-[100vh] max-w-[100vw] overflow-hidden bg-zinc-800 text-white ">

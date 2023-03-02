@@ -49,7 +49,8 @@ const ProjectGrids = (props: Props) => {
             <div className="  md:border-r md:border-l border-zinc-600 pt-6 px-3 ">
               <div className=" flex justify-between items-center my-4">
                 <div className=" bg-slate-800 px-6 py-2 rounded-3xl text-2xl">
-                  {item.title} ({item.count})
+                  <span>{item.title}</span>
+                  <span>{item.count.toString()}</span>
                 </div>
                 <div className=" flex items-center gap-6 text-2xl ">
                   <div className=" center">

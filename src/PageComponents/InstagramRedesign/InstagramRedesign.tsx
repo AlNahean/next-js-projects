@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import MainContent from "./Components/MainContent/MainContent";
 
-type Props = {};
+type pageProps = {};
 
-const InstagramRedesign = (props: Props) => {
+const InstagramRedesign = (props: pageProps) => {
   const [isSidebar, setIsSidebar] = useState(false);
   return (
     <div className=" instagram-redesign-page-wrapper max-w-[100vw] overflow-x-hidden">

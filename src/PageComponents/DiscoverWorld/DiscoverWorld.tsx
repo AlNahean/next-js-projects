@@ -2,9 +2,9 @@ import React from "react";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import MainContent from "./Components/MainComponent/MainContent";
 
-type Props = {};
+type pageProps = {};
 
-const DiscoverWorld = (props: Props) => {
+const DiscoverWorld = (props: pageProps) => {
   return (
     <div className=" instagram-redesign-page-wrapper max-w-[100vw] overflow-x-hidden text-white">
       <div className=" flex  min-h-[100vh] bg-slate-800">
