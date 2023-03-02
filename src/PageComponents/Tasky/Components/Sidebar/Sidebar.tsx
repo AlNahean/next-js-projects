@@ -13,6 +13,7 @@ import { BsMoonFill, BsFillPeopleFill } from "react-icons/bs";
 import { MdExplore, MdMessage } from "react-icons/md";
 import { RiSettings5Fill, RiLogoutBoxRLine } from "react-icons/ri";
 import { BsSunFill } from "react-icons/bs";
+import { AiOutlineDown } from "react-icons/ai";
 
 const sidebarListsUl = [
   {
@@ -37,7 +38,7 @@ type Props = {};
 
 const Sidebar = (props: Props) => {
   return (
-    <div className=" h-full w-full bg-zinc-800 border-r border-zinc-700 ">
+    <div className=" h-full w-full bg-zinc-800 border-r border-zinc-700 min-h-[100vh] ">
       <div className=" header h-[var(--tsky-header-height)] flex justify-between items-center border-b px-4 border-zinc-600">
         <div className="  font-semibold text-4xl">
           <span className=" text-red-700">T</span>asky
@@ -109,7 +110,7 @@ const Sidebar = (props: Props) => {
         })}
       </div>
 
-      <div className=" theme-switcher-wrapper px-4">
+      <div className=" theme-switcher-wrapper px-4 mt-[10vh]">
         <div className=" flex justify-evenly items-center bg-zinc-600 p-1 rounded-3xl">
           <button className=" flex justify-center items-center gap-2 bg-zinc-700 flex-1 rounded-3xl py-3 px-2  ">
             <div className=" text-2xl ">
@@ -124,6 +125,25 @@ const Sidebar = (props: Props) => {
             </div>
             <div>Light</div>
           </button>
+        </div>
+      </div>
+
+      <div className=" flex items-center justify-between px-4 my-10 cursor-pointer">
+        <div className=" flex items-center">
+          <div>
+            <img
+              src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1055.jpg"
+              alt=""
+              className=" rounded-full h-[3rem]"
+            />
+          </div>
+          <div className=" ml-4">
+            <h4 className=" text-xl">Nahean Fardous</h4>
+            <p className=" text-sm text-zinc-500">@n4h34n</p>
+          </div>
+        </div>
+        <div className=" text-2xl center">
+          <AiOutlineDown />
         </div>
       </div>
     </div>

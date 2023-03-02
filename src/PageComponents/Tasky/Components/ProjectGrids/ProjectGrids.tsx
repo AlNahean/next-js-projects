@@ -50,7 +50,7 @@ const ProjectGrids = (props: Props) => {
               <div className=" flex justify-between items-center my-4">
                 <div className=" bg-slate-800 px-6 py-2 rounded-3xl text-2xl">
                   <span>{item.title}</span>
-                  <span>{item.count.toString()}</span>
+                  <span>{` (${item.count.toString()})`}</span>
                 </div>
                 <div className=" flex items-center gap-6 text-2xl ">
                   <div className=" center">
@@ -60,6 +60,11 @@ const ProjectGrids = (props: Props) => {
                     <MdMoreHoriz />
                   </div>
                 </div>
+              </div>
+              <div className=" flex flex-col">
+                {item.dataArray.map((task, idx) => {
+                  return <Card task={task} />;
+                })}
               </div>
               {/* <DraggableList width={440} height={210} rowSize={1}>
                 {item.dataArray.map((task, idx) => {
