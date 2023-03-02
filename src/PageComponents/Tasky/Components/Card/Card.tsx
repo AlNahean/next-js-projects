@@ -20,6 +20,12 @@ const Card = ({ task }: Props) => {
         </div>
         <h1 className=" title text-4xl">{task.title}</h1>
 
+        {task?.img && (
+          <div className=" my-4">
+            <img src={task.img} alt="" className=" rounded-lg" />
+          </div>
+        )}
+
         <hr className=" border  border-zinc-600 border-opacity-40 my-6" />
 
         <div className=" flex gap-6">

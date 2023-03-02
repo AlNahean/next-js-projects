@@ -12,6 +12,7 @@ export type TaskType = {
   comment: Number;
   links: Number;
   date: String;
+  img: string;
 };
 
 export type taskyListUlDataType = [
@@ -29,6 +30,8 @@ type Props = {
 };
 
 const createCardData = () => {
+  let num = Math.floor(Math.random() * 100);
+
   let task: TaskType = {
     id: 1,
     projectName: faker.random.words().toString(),
@@ -36,6 +39,10 @@ const createCardData = () => {
     comment: Math.floor(Math.random() * 100),
     links: Math.floor(Math.random() * 100),
     date: "Due Tomorrow",
+    img:
+      num % 3 === 0
+        ? faker.image.abstract().toString() + "?" + num.toString()
+        : "",
   };
   return task;
 };

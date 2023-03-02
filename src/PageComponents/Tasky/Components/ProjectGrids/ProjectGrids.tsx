@@ -18,6 +18,7 @@ export type TaskType = {
   comment: Number;
   links: Number;
   date: String;
+  img: string;
 };
 
 const ProjectGrids = (props: Props) => {
@@ -43,7 +44,8 @@ const ProjectGrids = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className=" md:columns-2 xl:columns-3 px-6 ">
+      <div className=" grid md:grid-cols-3 xl:grid-cols-3 px-6 ">
+        {/* <div className=" md:columns-2 xl:columns-3 px-6 "> */}
         {taskyListUlData.map((item, index) => {
           return (
             <div className="  md:border-r md:border-l border-zinc-600 pt-6 px-3 ">
