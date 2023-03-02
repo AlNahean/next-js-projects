@@ -7,7 +7,7 @@ import { AiOutlineLink } from "react-icons/ai";
 import { SlCalender } from "react-icons/sl";
 import Card from "../Card/Card";
 import { faker } from "@faker-js/faker";
-import DraggableList from "react-draggable-lists";
+// import DraggableList from "react-draggable-lists";
 import { useTaskyPageContext } from "../../TaskyPageContext";
 type Props = {};
 
@@ -60,11 +60,11 @@ const ProjectGrids = (props: Props) => {
                   </div>
                 </div>
               </div>
-              <DraggableList width={440} height={210} rowSize={1}>
+              {/* <DraggableList width={440} height={210} rowSize={1}>
                 {item.dataArray.map((task, idx) => {
                   return <Card task={task} />;
                 })}
-              </DraggableList>
+              </DraggableList> */}
             </div>
           );
         })}

@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Home />
+      {/* <Home /> */}
       <h1 className=" w-100 bg-black text-white min-h-screen">
         <div className=" flex  bg-red-900">
           <div className=" hidden lg:block w-[var(--left-sidebar-width)] bg-slate-500 max-h-screen min-h-screen">
